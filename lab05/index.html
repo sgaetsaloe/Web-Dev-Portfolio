@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bakery Order Form</title>
+        <style>
+            body{
+                background-image: url("cupcake.jpeg");
+                margin: 0;
+                padding: 0;
+                color: #47235D;
+            }
+            .content{
+                background-color: #F7D3F7;
+                padding: 50px 75px;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 700px;
+                height: 100%;
+                filter: drop-shadow(5px 5px 7px #8C6A9B);
+            }
+
+            .form-row{
+                margin: 25px 0px;
+            }
+
+            .main-label{
+                float: left;
+                width: 250px;
+            }
+
+
+            h1 {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            #SpecialReq {
+                width: 60%;
+            }
+
+            #submitButton {
+                padding: 10px 20px;
+                background-color: #47235D;
+                color: #F7D3F7;
+                margin-left: 20px;
+                margin-right: auto;
+
+
+            }
+            #resetButton {
+                padding: 2px 2px;
+                margin-left: 250px;
+                margin-right: auto;
+                background-color: transparent;
+                color: #8C6A9B;
+            }
+
+            .clearfloat {
+		        clear: both;
+	        }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="content">
+            <header>
+                <h1>Melanie's Bakery </h1>
+                <h3>Cupcake Order Form</h3>
+            </header>
+            <div class="form">
+                <form action="confirmation.html">
+
+                    <div class="form-row">
+                        <label for="name" class="main-label">Name:</label> 
+                        <input id="name" type="text" placeholder="Martha Jones" required>
+
+                    </div>
+
+                    <div class="form-row">
+                        <label for="number" class="main-label">Phone Number:</label> 
+                        <input id="number" type="text" placeholder="(123)-456-7890" required>
+
+                    </div>
+
+                    <div class="form-row">
+                        <label class="main-label">Number of cupcakes:</label>
+                        <select>
+                            <option value="12"> 12</option>
+                            <option value="24"> 24</option>
+                            <option value="46"> 46</option>
+                        </select>
+                        
+                    </div>
+                    
+    
+                    <div class="form-row">
+                        <label class="main-label">Batter Flavour:</label>
+                        <input type="radio" value="BChocolate" name="Bflavour" required id="chocolate"> <label for="chocolate">Chocolate</label>
+                        <input type="radio" value="BVanilla" name="Bflavour" required id="vanilla"> <label for="vanilla">Vanilla</label>
+                        <input type="radio" value="RedVelv" name="Bflavour" required id="redvelv"> <label for="redvelv">Red Velvet</label>
+                        
+                    </div>
+                            
+                    
+    
+                    <div class="form-row">
+                        <label class="main-label">Buttercream Frostin Flavour:</label>
+                        <input type="radio" value="FChocolate" name="Fflavour" required id="fchocolate"> <label for="chocolate">Chocolate</label>
+                        <input type="radio" value="FVanilla" name="Fflavour" required id="fvanilla"> <label for="vanilla">Vanilla</label>
+                        
+                    </div>
+                    
+                    
+                    <div class="form-row">
+                        <label class="main-label">Toppings:</label>
+                        <input type="checkbox" value="Sprinkles" name="Sprinkles"> <label>Sprinkles</label>
+                        <input type="checkbox" value="Glitter" name="glitter"> <label>Glitter</label>
+                        <input type="checkbox" value="ChocShave" name="ChocShave"> <label>Chocolate Shavings</label>
+                        <input type="checkbox" value="Oreo" name="Oreo"> <label>Crushed Oreos</label>
+                        
+                    </div>
+                    
+    
+    
+                    <div class="form-row">
+                        <label for="SpecialReq" class="main-label">Special Requests or Dietary restrictions:</label>
+                        <textarea id="SpecialReq" placeholder="ie: Gluten free, silver glitter, etc"></textarea>
+                        
+                    </div>
+                    
+    
+                    <div class="form-row">
+                        <input type="checkbox" value="tc" name="tc" required id="tc"> <label for="tc"> terms and conditions</label>
+                    </div>
+                    
+    
+                    <div class="form-row">
+                        <button type="Reset" id="resetButton">Reset</button>
+                        <button type="Submit" id="submitButton">Submit</button>
+                        
+                        
+                    </div>
+                    
+                </form>
+    
+            </div> <!-- form div -->
+
+        </div><!-- content div -->
+        
+
+    </body>
+
+</html>

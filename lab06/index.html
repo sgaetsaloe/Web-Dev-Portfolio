@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 06</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            .main {
+                background-color: pink;
+                width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .thumbnail:hover .overlay {
+                visibility:visible;
+            }
+            
+            .thumbnail > img {
+                width: auto;
+                height: 100%;
+            }
+
+            .thumbnail {
+                background-color: #CCC;
+                margin: 10px;
+                width: 330px;
+                height: 220px;
+                float: left;
+                overflow: hidden;		
+                position:relative;
+            }
+            
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.6);
+                color:#fff;
+                position:absolute;
+                top:0;
+                left:0px;
+                right:0px;
+                bottom:0px;
+                text-align:center;
+                visibility:hidden;
+                padding-top:35%;
+            }
+            h1 {
+                padding-top: 20px;
+                text-align: center;
+            }
+            @media (max-width:991px) {
+
+                #left, #right {float:none;width:auto;}
+                #container {width:auto;border:none;}
+                #left {border:none;}
+                #nav {width:auto;}
+                #nav li {width:25%;}
+                .thumbnail {width:10em;height:10em;}
+                #thumbnails {margin-left:7%;}
+                }
+
+
+                /* Mobile – Screen Sizes ≤ 767px */
+                /*background-color: lightblue;*/
+
+                @media (max-width:767px) {
+                body {padding:0px;}
+                #navbar {position:static;}
+                #nav li {float:none;width:auto;}
+                }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Spring 2023 Dance Show</h1>
+        <div class="main">
+            <div id="thumbnails">
+
+                <div class="thumbnail">
+                    <img src="img/blue.jpg" alt="USC Village">
+                    <div class="overlay">
+                        <p>Unholy Bad Guy</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+    
+                <div class="thumbnail">
+                    <img src="img/end.jpg" alt="Tutor Campus Center">
+                    <div class="overlay">
+                        <p>Closer</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+    
+                <div class="thumbnail">
+                    <img src="img/green.jpg" alt="Tommy Trojan" class="width-100">
+                    <div class="overlay">
+                        <p>Opener</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/orange.jpg" alt="Tommy Trojan" class="width-100">
+                    <div class="overlay">
+                        <p>Dictator</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/pose.jpg" alt="Tommy Trojan" class="width-100">
+                    <div class="overlay">
+                        <p>Middle </p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/red.jpg" alt="Tommy Trojan" class="width-100">
+                    <div class="overlay">
+                        <p>Final Pose</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+    
+                <div class="clearfloat"></div>
+
+        </div>
+        
+
+</div>	
+
+    </body>
+</html>
