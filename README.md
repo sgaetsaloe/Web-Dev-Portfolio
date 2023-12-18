@@ -1,1 +1,1 @@
-https://uscwebdev.github.io/itp104-submissions-sgaetsaloe/
+https://sgaetsaloe.github.io/Web-Dev-Portfolio/
